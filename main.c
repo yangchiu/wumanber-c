@@ -67,6 +67,10 @@ int main(int argc, const char* argv[]) {
 
   wuManberOperation->destroy(wuManber);
   rawOperation->gc(raw);
+  for(int i=0;i<numberOfPattern;i++) {
+    free(pattern[i]);
+  }
+  free(pattern);
 
   return 0;
 }
