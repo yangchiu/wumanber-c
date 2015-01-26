@@ -7,8 +7,6 @@
 execute make:
 ```python
 $ make
-# print
-# $ make
 # gcc -g -Wall -std=gnu99 -c main.c
 # gcc -g -Wall -std=gnu99 -c ShiftTable.c
 # gcc -g -Wall -std=gnu99 -c ShiftTableOperation.c
