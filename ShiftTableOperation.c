@@ -24,7 +24,7 @@ int get(ShiftTable shiftTable, char subString[2]) {
 }
 
 ShiftTableOperation ShiftTableOperationFactory() {
-  ShiftTableOperation shiftTableOperation = NULL;
+  static ShiftTableOperation shiftTableOperation = NULL;
   if(!shiftTableOperation) {
     shiftTableOperation = malloc(sizeof(ShiftTableOperationStruct));
     shiftTableOperation->put = put;

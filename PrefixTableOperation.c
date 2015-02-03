@@ -32,7 +32,7 @@ PatternNode pop(PrefixTable prefixTable, char subString[2]) {
 }
 
 PrefixTableOperation PrefixTableOperationFactory() {
-  PrefixTableOperation prefixTableOperation = NULL;
+  static PrefixTableOperation prefixTableOperation = NULL;
   if(!prefixTableOperation) {
     prefixTableOperation = malloc(sizeof(PrefixTableOperationStruct));
     prefixTableOperation->push = push;

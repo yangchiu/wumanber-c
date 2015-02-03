@@ -98,7 +98,7 @@ void gc(Raw raw) {
 }
 
 RawOperation RawOperationFactory() {
-  RawOperation rawOperation = NULL;
+  static RawOperation rawOperation = NULL;
   if(!rawOperation) {
     rawOperation = malloc(sizeof(RawOperationStruct));
     rawOperation->readBytes = readBytes;

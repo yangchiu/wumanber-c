@@ -150,7 +150,7 @@ void destroy(WuManber wuManber) {
 }
 
 WuManberOperation WuManberOperationFactory() {
-  WuManberOperation wuManberOperation = NULL;
+  static WuManberOperation wuManberOperation = NULL;
   if(!wuManberOperation) {
     wuManberOperation = malloc(sizeof(WuManberOperationStruct));
     wuManberOperation->buildShiftTable = buildShiftTable;
