@@ -1,4 +1,4 @@
-# wu-manber-string-matching
+# Wu-Manber String Matching Algorithm C implementation
 - Wu-Manber algorithm C implementation
 - only for 7-bits ASCII
 - minimum pattern length should greater than 3
